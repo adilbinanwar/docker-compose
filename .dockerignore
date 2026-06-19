@@ -2,33 +2,36 @@
 .git
 .gitignore
 
-# Python caching and build files
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-env/
-venv/
-.venv/
-pip-log.txt
-pip-delete-this-directory.txt
-
-# Django files
-db.sqlite3
-media/
-staticfiles/
-
-# System and IDE configurations
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
-
 # Docker configuration files
 Dockerfile
 docker-compose.yml
 .dockerignore
 
-# Environment files and secrets
+# Python build and cache artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local Django development files
+db.sqlite3
 .env
+.venv
+venv/
+env/
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
