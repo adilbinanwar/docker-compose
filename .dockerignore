@@ -1,0 +1,34 @@
+# Git version control
+.git
+.gitignore
+
+# Python caching and build files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Django files
+db.sqlite3
+media/
+staticfiles/
+
+# System and IDE configurations
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Docker configuration files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Environment files and secrets
+.env
