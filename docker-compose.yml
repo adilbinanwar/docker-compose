@@ -30,8 +30,7 @@ services:
       - DB_USER=django_user
       - DB_PASSWORD=django_password
     depends_on:
-      db:
-        condition: service_healthy
+      - db
 
 volumes:
   mysql_data:
