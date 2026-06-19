@@ -24,13 +24,14 @@ services:
       - .:/code
     ports:
       - "8000:8000"
-    depends_on:
-      - db
     environment:
       - DB_HOST=db
       - DB_NAME=my_django_db
       - DB_USER=django_user
       - DB_PASSWORD=django_password
+    depends_on:
+      - db:
+        condition: service_healthy
 
 volumes:
   mysql_data:
